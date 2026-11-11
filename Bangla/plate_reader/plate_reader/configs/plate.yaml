@@ -1,0 +1,7 @@
+train: train/images
+val: val/images
+test: test/images
+nc: 1
+names:
+- License Plate
+path: D:\Python\Personal Projects\Bangla\data\license_plate\Vehicle_to_License_Plate

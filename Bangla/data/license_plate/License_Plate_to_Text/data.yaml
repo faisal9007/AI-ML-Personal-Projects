@@ -1,0 +1,22 @@
+train: ../train/images
+val: ../val/images
+test: ../test/images
+
+nc: 102
+names : [
+    "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "Metro",
+    "O", "Bh", "Ch", "Chh", "Do", "D", "E", "G", "Gh", "H", "J", "Jh",
+    "K", "Kh", "L", "M", "N", "P", "S", "Sh", "T", "Thh", "Th", "U",
+    "Bagerhat", "Bogura", "Bandarban", "Borguna", "Barishal", "Bhola",
+    "Brahmanbaria", "Chandpur", "Chapainawabganj", "Chatt", "Chattogram",
+    "Chuadanga", "Cox's Bazar", "Cumilla", "Dhaka", "Dinajpur", "Faridpur",
+    "Feni", "Gaibandha", "Gazipur", "Gopalganj", "Habiganj", "Jamalpur",
+    "Jashore", "Jhalokati", "Jhenaidah", "Joypurhat", "Khagrachari", "Khulna",
+    "Kishoreganj", "Kurigram", "Kushtia", "Lakshmipur", "Lalmonirhat",
+    "Madaripur", "Magura", "Manikganj", "Meherpur", "Moulvibazar",
+    "Mymensingh", "Naogaon", "Narail", "Narayanganj", "Narsingdi", "Natore",
+    "Netrokona", "Nilphamari", "Noakhali", "Pabna", "Panchagarh", "Patuakhali",
+    "Pirojpur", "Raj", "Rajbari", "Rajshahi", "Rangamati", "Rangpur",
+    "Satkhira", "Shariatpur", "Sherpur", "Sirajganj", "Sunamganj", "Sylhet",
+    "Tangail", "Thakurgaon", "Dh", "B"
+]

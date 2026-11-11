@@ -1,0 +1,9 @@
+ultralytics
+kagglehub
+pyyaml
+pandas
+matplotlib
+opencv-python
+pillow
+streamlit
+gradio

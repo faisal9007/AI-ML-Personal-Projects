@@ -1,0 +1,33 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    { "name": "1. Prepare data", "type": "debugpy", "request": "launch",
+      "program": "${workspaceFolder}/prepare_data.py", "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}" },
+    { "name": "2. Explore data", "type": "debugpy", "request": "launch",
+      "program": "${workspaceFolder}/explore.py", "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}" },
+    { "name": "3. Train both models", "type": "debugpy", "request": "launch",
+      "program": "${workspaceFolder}/train.py", "args": ["--model", "both"],
+      "console": "integratedTerminal", "cwd": "${workspaceFolder}" },
+    { "name": "3b. Resume character reader", "type": "debugpy", "request": "launch",
+      "program": "${workspaceFolder}/train.py", "args": ["--model", "char", "--resume"],
+      "console": "integratedTerminal", "cwd": "${workspaceFolder}" },
+    { "name": "4. Evaluate (test split)", "type": "debugpy", "request": "launch",
+      "program": "${workspaceFolder}/evaluate.py", "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}" },
+    { "name": "5. Predict on a file/folder (asks for path)", "type": "debugpy", "request": "launch",
+      "program": "${workspaceFolder}/predict.py", "args": ["${input:imagePath}"],
+      "console": "integratedTerminal", "cwd": "${workspaceFolder}" },
+    { "name": "6. Streamlit app", "type": "debugpy", "request": "launch",
+      "module": "streamlit", "args": ["run", "streamlit_app.py"],
+      "console": "integratedTerminal", "cwd": "${workspaceFolder}" },
+    { "name": "6b. Gradio app", "type": "debugpy", "request": "launch",
+      "program": "${workspaceFolder}/gradio_app.py", "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}" }
+  ],
+  "inputs": [
+    { "id": "imagePath", "type": "promptString",
+      "description": "Path to an image or a folder of images" }
+  ]
+}
